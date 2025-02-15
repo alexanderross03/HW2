@@ -162,25 +162,3 @@ public class BinaryTree {
 
         return new int[]{sum, count};
     }
-
-    // Main method for testing
-    public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
-
-        tree.insert(10);
-        tree.insert(5);
-        tree.insert(15);
-        tree.insert(3);
-        tree.insert(7);
-        tree.insert(12);
-        tree.insert(18);
-
-        System.out.println("Preorder traversal: " + tree.preOrder());
-        System.out.println("Minimum value: " + tree.findMin());
-        System.out.println("Nodes greater than 7: " + tree.nodesGT(7));
-        System.out.println("Average of values: " + tree.average());
-
-        tree.replaceValue(10, 20);
-        System.out.println("Preorder after replacing 10 with 20: " + tree.preOrder());
-    }
-}
